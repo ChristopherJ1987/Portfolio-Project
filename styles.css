@@ -40,7 +40,6 @@ body {
     background-color: var(--main-gray);
     text-shadow: 0 0 20px var(--main-white), 0 0 75px var(--main-white), 0 0 100px var(--main-white);
     border-radius: 44px 4px 44px;
-    text-decoration: underline;
 }
 .nav-list {
     display: flex;
