@@ -1,26 +1,43 @@
 const panels = document.querySelectorAll('.panel');
 const allPanels = document.querySelector('.panels');
-const glowingButton = document.querySelector('.glowing-btn');
+let glowingButton = document.querySelector('.glowing-btn');
 
-    function toggleOpen() {
-        // console.log('Hello');
-        this.classList.toggle('open');
-    }
+// Can't get the hide button to work yet....
+// let hideButton = document.querySelector('#hidePanels');
 
-    function toggleActive(e) {
-        // console.log(e.propertyName);
-        if (e.propertyName.includes('flex')) {
-            this.classList.toggle('open-active');
-        }
+function toggleOpen() {
+    this.classList.toggle('open');
+}
+
+function toggleActive(e) {
+    if (e.propertyName.includes('flex')) {
+        this.classList.toggle('open-active');
     }
+}
 
 panels.forEach(panel => panel.addEventListener('click', toggleOpen));
 panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
 
 function showPanels() {
-    if(allPanels.style.display === 'none') {
+    if (allPanels.style.display === 'none') {
         allPanels.style.display = "flex";
     }
+    glowingButton.style.display = "none";
+
+    // Can't get the hide button to work yet....
+    // glowingButton.innerHTML = '<span class="glowing-txt">Hi<span class="faulty-letter">d</span>e <span class="faulty-letter">P</span>anels</span>';
+    // glowingButton.id = "hidePanels";
+
 }
+// Can't get the hide button to work yet....
+// function closePanels() {
+//     console.log("hide button pushed");
+//     if (allPanels.style.display === 'flex') {
+//         allPanels.style.display = "none";
+//     }
+// }
 
 glowingButton.addEventListener('click', showPanels);
+
+// Can't get the hide button to work yet....
+// hideButton.addEventListener('click', closePanels);

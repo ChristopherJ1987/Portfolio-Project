@@ -246,6 +246,7 @@ footer > p {
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
+    cursor: pointer;
 }
 .panel > *:first-child { transform: translateY(-100%); }
 .panel.open-active > *:first-child { transform: translateY(0); }
@@ -269,7 +270,7 @@ footer > p {
         font-size: 1em;
     }
 }
-.glowing-btn {
+.glowing-btn, .hidePanels {
     position: relative;
     color: var(--glow-color);
     cursor: pointer;
