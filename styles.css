@@ -442,6 +442,8 @@
         z-index: 10;
         display: flex;
         position: fixed;
+        margin-bottom: 0;
+        padding-bottom: 0;
         background: var(--main-red);
         justify-content: space-evenly;
         box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
@@ -449,6 +451,7 @@
     .icons {
         width: 33%;
         display: flex;
+        margin-left: 0.5rem;
         align-items: center;
         justify-content: space-evenly;
     }
@@ -457,7 +460,7 @@
     }
     .links {
         display: flex;
-        margin-right: 0.5rem;
+        margin-right: 0.75rem;
         align-items: center;
         justify-content: center;
     }
