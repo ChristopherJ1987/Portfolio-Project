@@ -7,9 +7,58 @@
     --glow-color: hsl(186 100% 69%);
 }
 
+/* Mobile Phones Portrait */
+@media (min-width: 320px) and (max-width: 480px) {
+    .flexNav {
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        display: flex;
+        position: fixed;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        background: var(--main-red);
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    }
+    .icons {
+        width: 25%;
+        display: flex;
+        margin-left: 2.5rem;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .icons img {
+        height: 44%;
+    }
+    .links {
+        display: flex;
+        margin-right: 0.75rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-list {
+        display: flex;
+    }
+    ul {
+        list-style: none;
+    }
+    .nav-list a {
+        padding: 1rem;
+        display: flex;
+        font-size: 1.5rem;
+    }
+    li {
+        display: list-item;
+    }
+    a {
+        text-decoration: none;
+        color: var(--main-white);
+    }
+}
+
 /* Desktop */
 @media (min-width: 1025px) {
-
     @media (max-width: 75em) {
         html {
             font-size: 60%;
@@ -429,57 +478,5 @@
         .glowing-btn{
             font-size: .15em;
         }
-    }
-}
-
-/* Mobile Phones Portrait */
-@media (min-width: 320px) and (max-width: 480px) {
-    
-    .flexNav {
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 10;
-        display: flex;
-        position: fixed;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        background: var(--main-red);
-        justify-content: space-evenly;
-        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    }
-    .icons {
-        width: 33%;
-        display: flex;
-        margin-left: 0.5rem;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    .icons img {
-        height: 44%;
-    }
-    .links {
-        display: flex;
-        margin-right: 0.75rem;
-        align-items: center;
-        justify-content: center;
-    }
-    .nav-list {
-        display: flex;
-    }
-    ul {
-        list-style: none;
-    }
-    .nav-list a {
-        padding: 1rem;
-        display: flex;
-        font-size: 1.5rem;
-    }
-    li {
-        display: list-item;
-    }
-    a {
-        text-decoration: none;
-        color: var(--main-white);
     }
 }
