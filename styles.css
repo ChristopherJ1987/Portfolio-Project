@@ -37,13 +37,14 @@
         margin-bottom: 0;
         padding-bottom: 0;
         background: var(--main-red);
+        justify-content: space-between;
         box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     }
     .icons {
         width: 33%;
         display: flex;
+        padding-left: 2rem;
         align-items: center;
-        padding-left: 1rem;
         justify-content: space-around;
     }
     .icons img {
@@ -52,6 +53,7 @@
     .links {
         display: flex;
         align-items: center;
+        padding-right: 2.2rem;
     }
     .nav-list {
         display: flex;
@@ -76,6 +78,7 @@
         width: 100%;
         height: 100vh;
         display: flex;
+        padding-top: 2rem;
         align-items: center;
         flex-direction: column;
         justify-content: center;
