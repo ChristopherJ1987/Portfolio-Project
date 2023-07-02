@@ -100,6 +100,55 @@
         font-style: italic;
         color: var(--main-red);
     }
+    .projects-section {
+        text-align: center;
+        padding: 10rem 2rem;
+        background: var(--main-blue);
+    }
+    .projects-section-header {
+        max-width: 480px;
+        margin: 0 auto 6rem auto;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    .projects-grid {
+        width: 100%;
+        display: grid;
+        margin: 0 auto;
+        grid-gap: 4rem;
+        max-width: 444px;
+        margin-bottom: 6rem;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 444px));
+    }
+    .project {
+        border-radius: 2px;
+        background: var(--main-gray);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .project-image {
+        width: 100%;
+        object-fit: cover;
+        height: calc(100% - 6.8rem);
+    }
+    .project-title {
+        font-size: 2rem;
+        padding: 2rem 0.5rem;
+    }
+    .code {
+        color: orange;
+        transition: color 0.3s ease-out;
+    }
+    .btn-show-all {
+        font-size: 2rem;
+        background: var(--main-gray);
+        transition: background 0.3s ease-out;
+    }
+    .btn {
+        display: inline-block;
+        padding: 1rem 2rem;
+        border-radius: 2px;
+    }
 }
 
 /* Desktop */
