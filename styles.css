@@ -1,14 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 :root {
-    --main-white: #f0f0f0;
     --main-red: #be3144;
     --main-blue: #45567d;
     --main-gray: #303841;
+    --main-white: #f0f0f0;
     --glow-color: hsl(186 100% 69%);
 }
 
 /* Mobile Phones Portrait */
 @media (min-width: 320px) and (max-width: 480px) {
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        line-height: 1.4;
+        font-weight: 400;
+        font-size: 1.8rem;
+        color: var(--main-white);
+        font-family: 'Poppins', sans-serif;
+    }
     .flexNav {
         top: 0;
         left: 0;
@@ -53,6 +70,31 @@
     a {
         text-decoration: none;
         color: var(--main-white);
+    }
+    .welcome-section {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #000;
+        text-shadow: 0 0 20px var(--main-white);
+        background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h1, h2 {
+        font-weight: 700;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+    }
+    .welcome-section > p {
+        font-size: 2rem;
+        font-weight: 200;
+        font-style: italic;
+        color: var(--main-red);
     }
 }
 
@@ -118,8 +160,8 @@
     }
     .nav-list a {
         display: flex;
-        font-size: 2.2rem;
         padding: 2rem;
+        font-size: 2.2rem;
     }
     li {
         display: list-item;
@@ -129,23 +171,23 @@
         color: var(--main-white);
     }
     .welcome-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         width: 100%;
         height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
         background-color: #000;
-        background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
         text-shadow: 0 0 20px var(--main-white);
+        background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     }
     h1 {
         font-size: 6rem;
     }
     h1, h2 {
-        font-family: 'Raleway', sans-serif;
         font-weight: 700;
         text-align: center;
+        font-family: 'Raleway', sans-serif;
     }
     .welcome-section > p {
         font-size: 3rem;
