@@ -339,6 +339,59 @@
         padding: 1rem 2rem;
         border-radius: 2px;
     }
+    #contact {
+        width: fit-content;
+    }
+    .contact-section {
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        padding: 1rem 1rem;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background: var(--main-gray);
+    }
+    .contact-section-header > h2 {
+        font-size: 4rem;
+    }
+    .contact-links {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 767px;
+        margin-top: 4rem;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .contact-details {
+        font-size: 1.5rem;
+        text-shadow: 2px 2px 1px #1f1f1f;
+        transition: transform 0.3s ease-out;
+    }
+    .btn {
+        padding: 1rem 2rem;
+        border-radius: 2px;
+        display: inline-block;
+    }
+    footer {
+        width: 100vw;
+        display: flex;
+        font-weight: 300;
+        align-items: center;
+        flex-direction: column;
+        background: var(--main-gray);
+        justify-content: space-between;
+        padding: 1.25rem 3rem 1.5rem 2rem;
+        border-top: 4px solid var(--main-red);
+    }
+    footer p {
+        padding: 1rem;
+    }
+    footer button {
+        display: none;
+    }
 }
 
 /* Desktop */
