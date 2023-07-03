@@ -7,7 +7,7 @@
     --glow-color: hsl(186 100% 69%);
 }
 
-/* Mobile Phones Portrait */
+/* Mobile Phone Portrait */
 @media (min-width: 320px) and (max-width: 480px) {
     html {
         font-size: 62.5%;
@@ -165,7 +165,6 @@
     .contact-links {
         width: 100%;
         display: flex;
-        /* flex-wrap: wrap; */
         max-width: 444px;
         margin-top: 4rem;
         flex-direction: column;
@@ -196,6 +195,101 @@
     }
     footer button {
         display: none;
+    }
+}
+
+/* Mobile Phone Landscape */
+@media (min-width: 481px) and (max-width: 767px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    html {
+        font-size: 62.5%;
+        width: fit-content;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    body {
+        line-height: 1.4;
+        font-weight: 400;
+        font-size: 1.8rem;
+        color: var(--main-white);
+        font-family: 'Poppins', sans-serif;
+    }
+    .flexNav {
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        display: flex;
+        position: fixed;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        max-height: 475px;
+        background: var(--main-red);
+        justify-content: space-around;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    }
+    .icons {
+        display: flex;
+        max-width: 44%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .icons img {
+        height: 40%;
+    }
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .nav-list {
+        display: flex;
+    }
+    ul {
+        list-style: none;
+    }
+    .nav-list a {
+        display: flex;
+        font-size: 1.5rem;
+        padding: 1rem 0.75rem 1rem 0.75rem;
+    }
+    li {
+        display: list-item;
+    }
+    a {
+        text-decoration: none;
+        color: var(--main-white);
+    }
+    .welcome-section {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        min-width: 100%;
+        margin-top: 4.4rem;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #000;
+        text-shadow: 0 0 20px var(--main-white);
+        background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h1, h2 {
+        font-weight: 700;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+    }
+    .welcome-section > p {
+        font-size: 2rem;
+        font-weight: 200;
+        font-style: italic;
+        color: var(--main-red);
     }
 }
 
