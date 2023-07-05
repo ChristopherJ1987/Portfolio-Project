@@ -339,11 +339,7 @@
         padding: 1rem 2rem;
         border-radius: 2px;
     }
-    #contact {
-        width: fit-content;
-    }
     .contact-section {
-        width: 100vw;
         height: 80vh;
         display: flex;
         padding: 1rem 1rem;
@@ -357,7 +353,6 @@
         font-size: 4rem;
     }
     .contact-links {
-        width: 100%;
         display: flex;
         flex-wrap: wrap;
         max-width: 767px;
@@ -373,10 +368,9 @@
     .btn {
         padding: 1rem 2rem;
         border-radius: 2px;
-        display: inline-block;
+        /* display: inline-block; */
     }
     footer {
-        width: 100vw;
         display: flex;
         font-weight: 300;
         align-items: center;
