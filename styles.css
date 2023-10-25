@@ -837,8 +837,8 @@
     .flexNav {
         top: 0;
         left: 0;
-        width: 100%;
         z-index: 10;
+        width: 100vw;
         display: flex;
         position: fixed;
         background: var(--main-red);
@@ -964,10 +964,9 @@
         border-radius: 2px;
     }
     .contact-section {
-        width: 100%;
+        width: 100vw;
         height: 80vh;
         display: flex;
-        padding: 2rem 2rem;
         text-align: center;
         align-items: center;
         flex-direction: column;
@@ -978,7 +977,6 @@
         font-size: 6rem;
     }
     .contact-links {
-        width: 100%;
         display: flex;
         flex-wrap: wrap;
         max-width: 980px;
